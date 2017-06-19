@@ -25,6 +25,7 @@ Public Class Launcher
 
     Dim VersionProgressbar As New ProgressBar
     Dim Versiongroesse As New Label
+    Dim News_Text As New Label
 
     Dim INI As New INIDatei.INIDatei 'Dekalriert INI
     Private WithEvents HTTPClient As WebClient 'HTTPClient
@@ -74,6 +75,8 @@ Public Class Launcher
         Versiongroesse_Erstellen()
         RTB_Version_Erstellen()
 
+        News_Text_Erstellen()
+
         If Datenbank.Spiel_AutoUpdate = True Then
             UpdatePrüfung()
         Else
@@ -104,7 +107,7 @@ Public Class Launcher
                 Dim NeueVersion As String
 
                 'Zuweisungen
-                FTPLink = "https://raw.githubusercontent.com/DavHil/maze-time/master/Maze-Time/Maze-Time/Version.txt" 'FTP-DownloadLink zur Text-Datei mit evtl. neuer Version
+                FTPLink = "https://raw.githubusercontent.com/DavHil/eXeGaming/master/eXeGaming/eXeGaming/Version.txt" 'FTP-DownloadLink zur Text-Datei mit evtl. neuer Version
                 DownloadVerzeichnisVersion = My.Application.Info.DirectoryPath & "\Temp\Version.txt" 'System.Text.Encoding.GetEncoding(1252) 'Wohin die Text-Datei heruntergeladen werden soll
                 AktuelleVersion = Application.ProductVersion 'Die derzeit verwendete Version
 
@@ -252,7 +255,9 @@ Public Class Launcher
         With RTB_Version
             .Location = New Point(490, 82)
             .Size = New Size(298, 358)
-            .BackColor = Color.DarkGray
+            .BackColor = Color.Black
+            .ForeColor = Color.White
+            .ReadOnly = True
         End With
         Controls.Add(RTB_Version)
         RTB_Version.Parent = Me
@@ -449,17 +454,31 @@ Public Class Launcher
 #End Region
 
 #Region "PB_News"
-    Private Sub PB_News_Erstellen()
-        With PB_News
-            .Location = New Point(488, 80)
-            .Size = Datenbank.Launcher_News
-            .Image = My.Resources.News_bg
-        End With
 
-        Controls.Add(PB_News)
-        PB_News.Parent = Me
+    Private Sub PB_News_Erstellen()
+        'With PB_News
+        '    .Location = New Point(488, 80)
+        '    .Size = Datenbank.Launcher_News
+        '    .BackgroundImage = My.Resources.News_bg
+        'End With
+
+        'Controls.Add(PB_News)
+        'PB_News.Parent = Me
     End Sub
 #End Region
+
+
+
+    Private Sub News_Text_Erstellen()
+        'With News_Text
+        '    .Location = New Point(500, 465)
+        '    .ForeColor = Color.White
+        '    .BackColor = Color.Transparent
+        '    .Text = "585858"
+        'End With
+        'Controls.Add(News_Text)
+        'News_Text.Parent = Me
+    End Sub
 
 #Region "PB_Spiel-Starten"
     Private Sub PB_Spiel_Starten_Erstellen()

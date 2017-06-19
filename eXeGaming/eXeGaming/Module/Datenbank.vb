@@ -1,10 +1,10 @@
 ﻿Module Datenbank 'Dies ist die Datenbank des Spiels
 
     'Spiel Einstellungen
-    Public Spiel_Name As String = "eXeCutiveClan"
+    Public Spiel_Name As String = "eXeGaming"
     Public Spiel_Inhaber As String = "David Hilberath"
     Public Spiel_Coder As String = "David Hilberath"
-    Public Spiel_Email As String = "info@DavHil.de"
+    Public Spiel_Email As String = "info@Gaming-Newspaper.de"
     Public Spiel_Webseite As String = "https://executive-clan.de"
     Public Spiel_Pfad As String = "C:\"
     Public Spiel_Pfad_Spiel As String = "\" & Datenbank.Spiel_Name & "\"
@@ -15,18 +15,15 @@
     Public Spiel_Fenstervollbild As Boolean = True
     Public Spiel_Fenster As Boolean = False
     Public Spiel_FensterModus As String = "" 'Volldbild | Vollbild-Fenster | Fenster
-    Public Spiel_Hintergrundfarbe As Color = System.Drawing.ColorTranslator.FromHtml("#FFA07A")
-    Public Spiel_Schriftfarbe As Color = Color.Black
-    Public Spiel_Sounds As Boolean = False
-    Public Spiel_Musik As Boolean = False
     Public Spiel_AutoUpdate As Boolean = True
+    Public Spiel_Musik_Modus As Boolean = False
 
     'Launcher Einstellungen
     Public Launcher_Titel As String = Datenbank.Spiel_Name & " - Launcher"
     Public Launcher_Breite As Integer = 800
     Public Launcher_Höhe As Integer = 600
     Public Launcher_Hintergrundgrafik = My.Resources.Launcher
-    Public Launcher_Hintergrundfarbe As Color = System.Drawing.ColorTranslator.FromHtml("#FFA07A")
+    Public Launcher_Hintergrundfarbe As Color = Color.Orange
     Public Launcher_Schriftfarbe As Color = Color.White
     Public Launcher_Musik_Modus As Boolean = False
     Public Launcher_Titel_Song As String = "Launcher_Title_Screen"
@@ -40,7 +37,7 @@
     Public Spielmenu_Titel As String = Datenbank.Spiel_Name & " - Spielmenu"
     Public Spielmenu_Breite As Integer = 1920
     Public Spielmenu_Höhe As Integer = 1080
-    Public Spielmenu_Hintergrundfarbe As Color = System.Drawing.ColorTranslator.FromHtml("#FFA07A")
+    Public Spielmenu_Hintergrundfarbe As Color = Color.Orange
     Public Spielmenu_Schriftfarbe As Color = Color.Black
     Public Spielmenu_Titel_Song As String = "Spiele_Titel_Song"
     Public Spielmenu_Button = New Size(250, 50)
