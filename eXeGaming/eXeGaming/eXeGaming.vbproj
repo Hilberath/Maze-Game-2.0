@@ -87,6 +87,24 @@
     <Compile Include="Formen\Launcher.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formen\Spiele\Heisser_Draht\Heisser_Draht_Level_Menu.Designer.vb">
+      <DependentUpon>Heisser_Draht_Level_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\Spiele\Heisser_Draht\Heisser_Draht_Level_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formen\Spiele\Heisser_Draht\Level\HD_Level1.Designer.vb">
+      <DependentUpon>HD_Level1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\Spiele\Heisser_Draht\Level\HD_Level1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formen\Spiele\Heisser_Draht\Level\HD_Level2.Designer.vb">
+      <DependentUpon>HD_Level2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\Spiele\Heisser_Draht\Level\HD_Level2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formen\Spiel_Auswahl.Designer.vb">
       <DependentUpon>Spiel_Auswahl.vb</DependentUpon>
     </Compile>
@@ -100,6 +118,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module\Datenbank.vb" />
+    <Compile Include="Module\Level\Heisser_Draht_Level.vb" />
     <Compile Include="Module\Musik.vb" />
     <Compile Include="Module\Verzeichnis.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -121,6 +140,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Formen\Launcher.resx">
       <DependentUpon>Launcher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiele\Heisser_Draht\Heisser_Draht_Level_Menu.resx">
+      <DependentUpon>Heisser_Draht_Level_Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiele\Heisser_Draht\Level\HD_Level1.resx">
+      <DependentUpon>HD_Level1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiele\Heisser_Draht\Level\HD_Level2.resx">
+      <DependentUpon>HD_Level2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiel_Auswahl.resx">
+      <DependentUpon>Spiel_Auswahl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiel_Menu.resx">
+      <DependentUpon>Spiel_Menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -146,9 +180,7 @@
     <Folder Include="Formen\Spiele\Film_Quiz\Film_Cover_Quiz\" />
     <Folder Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\" />
     <Folder Include="Formen\Spiele\Film_Quiz\Film_Zitate_Quiz\" />
-    <Folder Include="Formen\Spiele\Heisser_Draht\" />
     <Folder Include="Formen\Spiele\HP_Schnitzeljagt\" />
-    <Folder Include="Module\Level\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\apple.png" />
@@ -947,6 +979,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\widescreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spielplatzhalter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heisser_draht_textur.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

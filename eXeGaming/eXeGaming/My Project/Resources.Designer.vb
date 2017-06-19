@@ -483,6 +483,16 @@ Namespace My.Resources
         '''<summary>
         '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property heisser_draht_textur() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("heisser_draht_textur", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Impressum() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Impressum", resourceCulture)
@@ -2706,6 +2716,16 @@ Namespace My.Resources
         Friend ReadOnly Property Spielfigur1_Tot() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Spielfigur1_Tot", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Spielplatzhalter() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Spielplatzhalter", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

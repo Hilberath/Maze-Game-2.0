@@ -42,6 +42,14 @@
     Public Spielmenu_Titel_Song As String = "Spiele_Titel_Song"
     Public Spielmenu_Button = New Size(250, 50)
 
+    'Spiel Auswahl
+    Public Spielauswahl_Breite As Integer = 1920
+    Public Spielauswahl_Höhe As Integer = 1080
+    Public Spielauswahl_Bild_Größe As Integer = 128
+    Public Spielauswahl_Breite_1_12 As Integer = (Datenbank.Spielauswahl_Breite / 10) / 3
+    Public Spielauswahl_Höhe_1_12 As Integer = (Datenbank.Spielauswahl_Höhe / 10) / 3
+    Public Spielauswahl_PB_Abstand As Integer = 25
+
     'Spiel Einstellungen
     Public Spielwelt_Titel As String = Datenbank.Spiel_Name & " - Ingame"
     Public Spielwelt_Breite As Integer = 1920
@@ -65,7 +73,8 @@
     Public Level_PB_Abstand As Integer = 25
     Public Maus_Back_Breite As Integer = 1727
     Public Maus_Back_höhe As Integer = 166
-    Public Balkenfarbe As Color = Color.DimGray
+    Public Balkenfarbe As Image = My.Resources.heisser_draht_textur
+
 
 
 

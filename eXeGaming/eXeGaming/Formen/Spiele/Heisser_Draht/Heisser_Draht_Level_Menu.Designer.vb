@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Spiel_Auswahl
+Partial Class Heisser_Draht_Level_Menu
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
@@ -24,13 +24,13 @@ Partial Class Spiel_Auswahl
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'Spiel_Auswahl
+        'Heisser_Draht_Level_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Name = "Spiel_Auswahl"
-        Me.Text = "Spiel_Auswahl"
+        Me.Name = "Heisser_Draht_Level_Menu"
+        Me.Text = "Heisser_Draht_Level_Menu"
         Me.ResumeLayout(False)
 
     End Sub
