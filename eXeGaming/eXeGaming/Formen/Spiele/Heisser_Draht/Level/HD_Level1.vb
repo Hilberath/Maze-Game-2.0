@@ -8,6 +8,9 @@
     Dim R06 As New PictureBox
     Dim R07 As New PictureBox
     Dim R08 As New PictureBox
+    Dim ZeitText As New Label
+    Dim Zeit As Integer
+    Dim Versuch As Integer
 
     Private Sub HD_Level1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Verzeichnis.Spielpfad_erstellen()
@@ -21,7 +24,8 @@
             .StartPosition = FormStartPosition.CenterScreen
             .WindowState = FormWindowState.Maximized
             '.Icon = My.Resources
-
+            Zeit = 0
+            Versuch = 0
             init()
 
         End With
@@ -47,7 +51,23 @@
         R06_Erstellen()
         R07_Erstellen()
         R08_Erstellen()
+        ZeitText_Erstellen()
+        Timer1.Start()
+        versuche()
 
+    End Sub
+
+    Private Sub ZeitText_Erstellen()
+        TSB_Zeit.Text = "Zeit: " & Zeit & " Sekunden"
+    End Sub
+    Private Sub countdown()
+
+        Zeit += 1
+        Timer1.Start()
+    End Sub
+
+    Private Sub versuche()
+        TSB_Versuche.Text = "Versuche:" & " " & Versuch
     End Sub
 
     Private Sub R01_Erstellen()
@@ -63,6 +83,7 @@
     End Sub
 
     Private Sub R01_MouseEnter(sender As Object, e As EventArgs)
+        Versuch += 1
         MsgBox("Game Over")
         Dim x As Integer = Datenbank.Maus_Back_Breite
         Dim y As Integer = Datenbank.Maus_Back_höhe
@@ -71,7 +92,7 @@
 
     Private Sub R02_Erstellen()
         With R02
-            .Location = New Point(42, 999)
+            .Location = New Point(42, 962)
             .Size = New Size(1850, 30)
             .BackgroundImage = Datenbank.Balkenfarbe
             .BackgroundImageLayout = ImageLayout.Tile
@@ -82,6 +103,7 @@
     End Sub
 
     Private Sub R02_MouseEnter(sender As Object, e As EventArgs)
+        Versuch += 1
         MsgBox("Game Over")
         Dim x As Integer = Datenbank.Maus_Back_Breite
         Dim y As Integer = Datenbank.Maus_Back_höhe
@@ -101,6 +123,7 @@
     End Sub
 
     Private Sub R03_MouseEnter(sender As Object, e As EventArgs)
+        Versuch += 1
         MsgBox("Game Over")
         Dim x As Integer = Datenbank.Maus_Back_Breite
         Dim y As Integer = Datenbank.Maus_Back_höhe
@@ -121,6 +144,7 @@
     End Sub
 
     Private Sub R04_MouseEnter(sender As Object, e As EventArgs)
+        Versuch += 1
         MsgBox("Game Over")
         Dim x As Integer = Datenbank.Maus_Back_Breite
         Dim y As Integer = Datenbank.Maus_Back_höhe
@@ -140,6 +164,7 @@
     End Sub
 
     Private Sub R05_MouseEnter(sender As Object, e As EventArgs)
+        Versuch += 1
         MsgBox("Game Over")
         Dim x As Integer = Datenbank.Maus_Back_Breite
         Dim y As Integer = Datenbank.Maus_Back_höhe
@@ -159,6 +184,7 @@
     End Sub
 
     Private Sub R06_MouseEnter(sender As Object, e As EventArgs)
+        Versuch += 1
         MsgBox("Game Over")
         Dim x As Integer = Datenbank.Maus_Back_Breite
         Dim y As Integer = Datenbank.Maus_Back_höhe
@@ -181,7 +207,8 @@
     Private Sub R07_MouseEnter(sender As Object, e As EventArgs)
         Heisser_Draht_Level.level_002 = True
         Spiel_Menu.Show()
-        MsgBox("Glückwunsch, du hast es geschafft!")
+        MsgBox("Glückwunsch, du hast es geschafft")
+        Timer1.Stop()
         Me.Close()
     End Sub
 
@@ -197,7 +224,9 @@
         R08.Parent = Me
     End Sub
 
-    Private Sub Level1_LocationChanged(sender As Object, e As EventArgs) Handles Me.LocationChanged
-
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        countdown()
+        ZeitText_Erstellen()
+        versuche()
     End Sub
 End Class
