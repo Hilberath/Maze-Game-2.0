@@ -328,7 +328,7 @@ Public Class Launcher
     End Sub
 
     Private Sub PB_Einstellungen_Click(sender As Object, e As EventArgs)
-        Einstellungen.Show()
+        ' Einstellungen.Show()
     End Sub
     Private Sub PB_Einstellungen_MouseEnter(sender As Object, e As EventArgs)
         PB_Einstellungen.Image = My.Resources.button_config_mp
@@ -476,7 +476,7 @@ Public Class Launcher
     End Sub
 
     Private Sub PB_Spiel_Starten_Click(sender As Object, e As EventArgs)
-        Spiel_Menu.Show()
+        'Spiel_Menu.Show()
     End Sub
     Private Sub PB_Spiel_Starten_MouseEnter(sender As Object, e As EventArgs)
         PB_Spiel_Starten.Image = My.Resources.button_play_mp

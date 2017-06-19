@@ -30,6 +30,7 @@ Partial Class Launcher
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Name = "Launcher"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Launcher"
         Me.ResumeLayout(False)
 
