@@ -87,6 +87,12 @@
     <Compile Include="Formen\Launcher.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.Designer.vb">
+      <DependentUpon>Film_Quiz_Auswahl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formen\Spiele\Heisser_Draht\Heisser_Draht_Level_Menu.Designer.vb">
       <DependentUpon>Heisser_Draht_Level_Menu.vb</DependentUpon>
     </Compile>
@@ -140,6 +146,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Formen\Launcher.resx">
       <DependentUpon>Launcher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.resx">
+      <DependentUpon>Film_Quiz_Auswahl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formen\Spiele\Heisser_Draht\Heisser_Draht_Level_Menu.resx">
       <DependentUpon>Heisser_Draht_Level_Menu.vb</DependentUpon>

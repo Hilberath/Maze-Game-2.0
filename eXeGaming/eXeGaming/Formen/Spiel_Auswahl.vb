@@ -232,7 +232,7 @@
     Private Sub Spielauswahl_BG()
 
         PB_Spiel_001.BackgroundImage = My.Resources.Heißer_Draht
-        PB_Spiel_002.BackgroundImage = My.Resources.Spielplatzhalter
+        PB_Spiel_002.BackgroundImage = My.Resources.Film_Quiz_O
         PB_Spiel_003.BackgroundImage = My.Resources.Spielplatzhalter
         PB_Spiel_004.BackgroundImage = My.Resources.Spielplatzhalter
         PB_Spiel_005.BackgroundImage = My.Resources.Spielplatzhalter
@@ -338,7 +338,8 @@
     End Sub
 
     Private Sub PB_Spiel_002_Click(sender As Object, e As EventArgs)
-
+        Film_Quiz_Auswahl.Show()
+        Me.Close()
     End Sub
 
 #End Region

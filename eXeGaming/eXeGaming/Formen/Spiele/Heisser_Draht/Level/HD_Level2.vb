@@ -182,7 +182,7 @@
 
     Private Sub R07_MouseEnter(sender As Object, e As EventArgs)
         Heisser_Draht_Level.level_003 = True
-        Spiel_Menu.Show()
+        Heisser_Draht_Level_Menu.Show()
         MsgBox("Glückwunsch, du hast es geschafft!")
         Me.Close()
     End Sub
