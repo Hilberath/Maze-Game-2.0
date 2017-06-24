@@ -37,7 +37,7 @@ Public Class Launcher
             .FormBorderStyle = FormBorderStyle.None
             .Width = Datenbank.Launcher_Breite
             .Height = Datenbank.Launcher_Höhe
-            .BackColor = Datenbank.Launcher_Hintergrundfarbe
+            '.BackColor = Datenbank.Launcher_Hintergrundfarbe
             .ForeColor = Datenbank.Launcher_Schriftfarbe
             .Text = titel
             .ControlBox = False
@@ -486,6 +486,8 @@ Public Class Launcher
             .Location = New Point(651, 533)
             .Size = Datenbank.Launcher_Spiel_Starten
             .Image = My.Resources.button_play_op
+            .BackColor = Color.Transparent
+
         End With
         AddHandler PB_Spiel_Starten.Click, AddressOf PB_Spiel_Starten_Click
         AddHandler PB_Spiel_Starten.MouseEnter, AddressOf PB_Spiel_Starten_MouseEnter

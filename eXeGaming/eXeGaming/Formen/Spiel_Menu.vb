@@ -19,7 +19,7 @@
             .Text = titel
             .Width = Datenbank.Spielmenu_Breite
             .Height = Datenbank.Spielmenu_Höhe
-            .BackColor = Datenbank.Spielmenu_Hintergrundfarbe
+            .BackgroundImage = My.Resources.Hintergrund_standart
             .ForeColor = Datenbank.Spielmenu_Schriftfarbe
             .BackgroundImageLayout = ImageLayout.None
 

@@ -219,13 +219,7 @@
     <Folder Include="Formen\Spiele\HP_Schnitzeljagt\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\apple.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\apple_half.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\battery_charge.png" />
+    <None Include="Resources\Star_Wars_Theme.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\battery_full.png" />
@@ -306,13 +300,19 @@
     <None Include="Resources\counter.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Einstellungen.png" />
+    <None Include="Resources\Film_Quiz_Cover.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Film_Quiz_G.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Film_Quiz_O.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Zitat.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\glass_of_wine_empty.png" />
@@ -343,6 +343,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Heißer Draht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heisser_draht_textur.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Impressum.png" />
@@ -442,9 +445,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\keyboard.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Launcher.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Level001F.png" />
@@ -1014,25 +1014,28 @@
     <None Include="Resources\Spielfigur1-Tot.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\widescreen.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Spielplatzhalter.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\heisser_draht_textur.jpg" />
+    <None Include="Resources\widescreen.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Film_Quiz_Cover.png" />
+    <None Include="Resources\apple.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Film_Quiz_Theme.png" />
+    <None Include="Resources\apple_half.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Film_Quiz_Zitat.png" />
+    <None Include="Resources\battery_charge.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Star_Wars_Theme.wav" />
+    <None Include="Resources\Launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Einstellungen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hintergrund_standart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
