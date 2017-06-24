@@ -76,7 +76,7 @@
         With Film_Quiz_Spiel_001
             .Location = New Point(Datenbank.Spielmenu_Breite / 2 - 389, Datenbank.Spielmenu_Höhe / 2 - 128)
             .Size = New Size(256, 256)
-            .BackgroundImage = My.Resources.Level001F
+            .BackgroundImage = My.Resources.Film_Quiz_Theme
             .BackgroundImageLayout = ImageLayout.Stretch
         End With
         AddHandler Film_Quiz_Spiel_001.Click, AddressOf Film_Quiz_Spiel_001_Click
@@ -85,7 +85,6 @@
     End Sub
 
     Private Sub Film_Quiz_Spiel_001_Click(sender As Object, e As EventArgs)
-        HD_Level1.Show()
         Me.Close()
     End Sub
 
@@ -96,7 +95,7 @@
         With Film_Quiz_Spiel_002
             .Location = New Point(Datenbank.Spielmenu_Breite / 2 - 128, Datenbank.Spielmenu_Höhe / 2 - 128)
             .Size = New Size(256, 256)
-            .BackgroundImage = My.Resources.Level001F
+            .BackgroundImage = My.Resources.Film_Quiz_Cover
             .BackgroundImageLayout = ImageLayout.Stretch
         End With
         AddHandler Film_Quiz_Spiel_002.Click, AddressOf Film_Quiz_Spiel_002_Click
@@ -105,7 +104,7 @@
     End Sub
 
     Private Sub Film_Quiz_Spiel_002_Click(sender As Object, e As EventArgs)
-        HD_Level1.Show()
+        Film_Cover_Quiz_Level_Menu.Show()
         Me.Close()
     End Sub
 
@@ -116,7 +115,7 @@
         With Film_Quiz_Spiel_003
             .Location = New Point(Datenbank.Spielmenu_Breite / 2 + 133, Datenbank.Spielmenu_Höhe / 2 - 128)
             .Size = New Size(256, 256)
-            .BackgroundImage = My.Resources.Level001F
+            .BackgroundImage = My.Resources.Film_Quiz_Zitat
             .BackgroundImageLayout = ImageLayout.Stretch
         End With
         AddHandler Film_Quiz_Spiel_003.Click, AddressOf Film_Quiz_Spiel_003_Click
@@ -125,7 +124,6 @@
     End Sub
 
     Private Sub Film_Quiz_Spiel_003_Click(sender As Object, e As EventArgs)
-        HD_Level1.Show()
         Me.Close()
     End Sub
 

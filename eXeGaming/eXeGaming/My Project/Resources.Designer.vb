@@ -363,6 +363,16 @@ Namespace My.Resources
         '''<summary>
         '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Film_Quiz_Cover() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Film_Quiz_Cover", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Film_Quiz_G() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Film_Quiz_G", resourceCulture)
@@ -376,6 +386,26 @@ Namespace My.Resources
         Friend ReadOnly Property Film_Quiz_O() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Film_Quiz_O", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Film_Quiz_Theme() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Film_Quiz_Theme", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Film_Quiz_Zitat() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Film_Quiz_Zitat", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -87,6 +87,12 @@
     <Compile Include="Formen\Launcher.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Cover_Quiz\Film_Cover_Quiz_Level_Menu.Designer.vb">
+      <DependentUpon>Film_Cover_Quiz_Level_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Cover_Quiz\Film_Cover_Quiz_Level_Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.Designer.vb">
       <DependentUpon>Film_Quiz_Auswahl.vb</DependentUpon>
     </Compile>
@@ -124,6 +130,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module\Datenbank.vb" />
+    <Compile Include="Module\Level\Film_Cover_Quiz_Level.vb" />
     <Compile Include="Module\Level\Heisser_Draht_Level.vb" />
     <Compile Include="Module\Musik.vb" />
     <Compile Include="Module\Verzeichnis.vb" />
@@ -146,6 +153,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Formen\Launcher.resx">
       <DependentUpon>Launcher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiele\Film_Quiz\Film_Cover_Quiz\Film_Cover_Quiz_Level_Menu.resx">
+      <DependentUpon>Film_Cover_Quiz_Level_Menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.resx">
       <DependentUpon>Film_Quiz_Auswahl.vb</DependentUpon>
@@ -186,7 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formen\Spiele\eXeClicker\" />
-    <Folder Include="Formen\Spiele\Film_Quiz\Film_Cover_Quiz\" />
     <Folder Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\" />
     <Folder Include="Formen\Spiele\Film_Quiz\Film_Zitate_Quiz\" />
     <Folder Include="Formen\Spiele\HP_Schnitzeljagt\" />
@@ -994,6 +1003,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\heisser_draht_textur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Zitat.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
