@@ -93,10 +93,22 @@
     <Compile Include="Formen\Spiele\Film_Quiz\Film_Cover_Quiz\Film_Cover_Quiz_Level_Menu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\Level\FTQ_Level001.Designer.vb">
+      <DependentUpon>FTQ_Level001.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\Level\FTQ_Level001.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.Designer.vb">
       <DependentUpon>Film_Quiz_Auswahl.vb</DependentUpon>
     </Compile>
     <Compile Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\Film_Theme_Quiz_Level_Menu.Designer.vb">
+      <DependentUpon>Film_Theme_Quiz_Level_Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\Film_Theme_Quiz_Level_Menu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formen\Spiele\Heisser_Draht\Heisser_Draht_Level_Menu.Designer.vb">
@@ -131,6 +143,7 @@
     </Compile>
     <Compile Include="Module\Datenbank.vb" />
     <Compile Include="Module\Level\Film_Cover_Quiz_Level.vb" />
+    <Compile Include="Module\Level\Film_Theme_Quiz_Level.vb" />
     <Compile Include="Module\Level\Heisser_Draht_Level.vb" />
     <Compile Include="Module\Musik.vb" />
     <Compile Include="Module\Verzeichnis.vb" />
@@ -157,8 +170,14 @@
     <EmbeddedResource Include="Formen\Spiele\Film_Quiz\Film_Cover_Quiz\Film_Cover_Quiz_Level_Menu.resx">
       <DependentUpon>Film_Cover_Quiz_Level_Menu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\Level\FTQ_Level001.resx">
+      <DependentUpon>FTQ_Level001.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formen\Spiele\Film_Quiz\Film_Quiz_Auswahl.resx">
       <DependentUpon>Film_Quiz_Auswahl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\Film_Theme_Quiz_Level_Menu.resx">
+      <DependentUpon>Film_Theme_Quiz_Level_Menu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formen\Spiele\Heisser_Draht\Heisser_Draht_Level_Menu.resx">
       <DependentUpon>Heisser_Draht_Level_Menu.vb</DependentUpon>
@@ -196,7 +215,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Formen\Spiele\eXeClicker\" />
-    <Folder Include="Formen\Spiele\Film_Quiz\Film_Theme_Quiz\" />
     <Folder Include="Formen\Spiele\Film_Quiz\Film_Zitate_Quiz\" />
     <Folder Include="Formen\Spiele\HP_Schnitzeljagt\" />
   </ItemGroup>
@@ -1012,6 +1030,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Film_Quiz_Zitat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star_Wars_Theme.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

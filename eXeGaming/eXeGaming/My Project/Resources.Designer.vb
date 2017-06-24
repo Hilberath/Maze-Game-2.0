@@ -2761,6 +2761,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.IO.UnmanagedMemoryStream ähnlich wie System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Star_Wars_Theme() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Star_Wars_Theme", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property widescreen() As System.Drawing.Bitmap

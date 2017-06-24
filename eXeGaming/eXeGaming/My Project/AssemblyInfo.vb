@@ -13,7 +13,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("eXeGaming")>
-<Assembly: AssemblyCopyright("Copyright ©  2017 by Gaming Newspaper")>
+<Assembly: AssemblyCopyright("Copyright ©  2017 by eXeCutive Multigaming Clan")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(True)>

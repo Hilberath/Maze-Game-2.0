@@ -13,7 +13,6 @@
     Dim Versuch As Integer
 
     Private Sub HD_Level1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Verzeichnis.Spielpfad_erstellen()
         With Me
             .FormBorderStyle = FormBorderStyle.Fixed3D
             .Width = Datenbank.Level_Breite

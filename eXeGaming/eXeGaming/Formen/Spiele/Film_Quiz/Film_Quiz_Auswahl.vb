@@ -85,6 +85,7 @@
     End Sub
 
     Private Sub Film_Quiz_Spiel_001_Click(sender As Object, e As EventArgs)
+        Film_Theme_Quiz_Level_Menu.Show()
         Me.Close()
     End Sub
 

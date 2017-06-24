@@ -30,7 +30,7 @@ Public Class Launcher
     Dim INI As New INIDatei.INIDatei 'Dekalriert INI
     Private WithEvents HTTPClient As WebClient 'HTTPClient
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Launcher_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         init()
         Verzeichnis.Spielpfad_erstellen()
         With Me

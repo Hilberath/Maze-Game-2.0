@@ -12,7 +12,6 @@
     Dim R10 As New PictureBox
 
     Private Sub Level2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Verzeichnis.Spielpfad_erstellen()
         With Me
             .FormBorderStyle = FormBorderStyle.Fixed3D
             .Width = Datenbank.Level_Breite
