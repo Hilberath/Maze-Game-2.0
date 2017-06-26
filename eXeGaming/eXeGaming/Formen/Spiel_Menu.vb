@@ -25,6 +25,24 @@
             .BackgroundImageLayout = ImageLayout.None
 
         End With
+        Init()
+
+    End Sub
+
+    Private Sub Init()
+        Debug_Modus()
+        'Update_Statusleiste()
+        'AntiAlias()
+        Vollbildcheck()
+        PB_Spiel_Starten_Erstellen()
+        PB_Laden_Erstellen()
+        PB_Highscore_Erstellen()
+        PB_Erfolge_Erstellen()
+        PB_Einstellungen_Erstellen()
+        PB_Schliessen_Erstellen()
+    End Sub
+
+    Private Sub Vollbildcheck()
         If Datenbank.Spiel_Vollbild = True Then
             Me.WindowState = FormWindowState.Maximized
             Me.FormBorderStyle = FormBorderStyle.None
@@ -52,22 +70,6 @@
             Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
             Me.StartPosition = FormStartPosition.CenterScreen
         End If
-
-        Init()
-
-    End Sub
-
-    Private Sub Init()
-        Debug_Modus()
-        'Update_Statusleiste()
-        'AntiAlias()
-
-        PB_Spiel_Starten_Erstellen()
-        PB_Laden_Erstellen()
-        PB_Highscore_Erstellen()
-        PB_Erfolge_Erstellen()
-        PB_Einstellungen_Erstellen()
-        PB_Schliessen_Erstellen()
     End Sub
 
     'Private Sub AntiAlias()
@@ -109,6 +111,7 @@
 
     Private Sub PB_Spiel_Starten_Click(sender As Object, e As EventArgs)
         Spiel_Auswahl.Show()
+        Me.Close()
     End Sub
     Private Sub PB_Spiel_Starten_MouseEnter(sender As Object, e As EventArgs)
         PB_Spiel_Starten.Image = My.Resources.button_gamestart_mp
@@ -253,7 +256,7 @@
     End Sub
 
     Private Sub PB_Schliessen_Click(sender As Object, e As EventArgs)
-        Spiel_Auswahl.Show()
+        Application.Exit()
     End Sub
     Private Sub PB_Schliessen_MouseEnter(sender As Object, e As EventArgs)
         PB_Schliessen.Image = My.Resources.button_beenden_mp

@@ -85,44 +85,17 @@
             .Text = titel
             .Width = Datenbank.Spielmenu_Breite
             .Height = Datenbank.Spielmenu_Höhe
-            .BackColor = Datenbank.Spielmenu_Hintergrundfarbe
+            .BackgroundImage = My.Resources.Hintergrund_standart
             .ForeColor = Datenbank.Spielmenu_Schriftfarbe
             .BackgroundImageLayout = ImageLayout.None
 
         End With
-        If Datenbank.Spiel_Vollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.None
-            Me.ControlBox = False
-            Me.MaximizeBox = False
-            Me.MinimizeBox = False
-        ElseIf Datenbank.Spiel_Fenstervollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.Fixed3D
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        ElseIf Datenbank.Spiel_Fenster = True Then
-            Me.WindowState = FormWindowState.Normal
-            Me.FormBorderStyle = FormBorderStyle.Sizable
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        End If
-
         Init()
 
     End Sub
 
     Private Sub Init()
+        Vollbildcheck()
         Debug_Modus()
         LevelBG()
 
@@ -206,6 +179,36 @@
         PB_LvL_072_Erstellen()
     End Sub
 
+    Private Sub Vollbildcheck()
+        If Datenbank.Spiel_Vollbild = True Then
+            Me.WindowState = FormWindowState.Maximized
+            Me.FormBorderStyle = FormBorderStyle.None
+            Me.ControlBox = False
+            Me.MaximizeBox = False
+            Me.MinimizeBox = False
+        ElseIf Datenbank.Spiel_Fenstervollbild = True Then
+            Me.WindowState = FormWindowState.Maximized
+            Me.FormBorderStyle = FormBorderStyle.Fixed3D
+            Me.Width = Datenbank.Spielwelt_Breite
+            Me.Height = Datenbank.Spielwelt_Höhe
+            Me.ControlBox = True
+            Me.MaximizeBox = True
+            Me.MinimizeBox = True
+            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
+            Me.StartPosition = FormStartPosition.CenterScreen
+        ElseIf Datenbank.Spiel_Fenster = True Then
+            Me.WindowState = FormWindowState.Normal
+            Me.FormBorderStyle = FormBorderStyle.Sizable
+            Me.Width = Datenbank.Spielwelt_Breite
+            Me.Height = Datenbank.Spielwelt_Höhe
+            Me.ControlBox = True
+            Me.MaximizeBox = True
+            Me.MinimizeBox = True
+            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
+            Me.StartPosition = FormStartPosition.CenterScreen
+        End If
+    End Sub
+
     Private Sub Debug_Modus()
 
         If Datenbank.Spiel_Debug_Modus = True Then
@@ -217,10 +220,14 @@
 
     Private Sub LevelBG()
         If Heisser_Draht_Level.level_001 = True Then
-            PB_LvL_001.BackgroundImage = My.Resources.Level001F
-        Else
-            PB_LvL_001.BackgroundImage = My.Resources.Level001G
-        End If
+            If Heisser_Draht_Level.level_done_001 = True Then
+                PB_LvL_001.BackgroundImage = My.Resources.Level001D
+            ElseIf Heisser_Draht_Level.level_done_001 = False Then
+                PB_LvL_001.BackgroundImage = My.Resources.Level001F
+            End If
+        ElseIf Heisser_Draht_Level.level_001 = False Then
+                PB_LvL_001.BackgroundImage = My.Resources.Level001G
+            End If
 
         If Heisser_Draht_Level.level_002 = True Then
             PB_LvL_002.BackgroundImage = My.Resources.Level002F

@@ -87,44 +87,17 @@
             .Text = titel
             .Width = Datenbank.Spielmenu_Breite
             .Height = Datenbank.Spielmenu_Höhe
-            .BackColor = Datenbank.Spielmenu_Hintergrundfarbe
+            .BackgroundImage = My.Resources.Hintergrund_standart
             .ForeColor = Datenbank.Spielmenu_Schriftfarbe
             .BackgroundImageLayout = ImageLayout.None
 
         End With
-        If Datenbank.Spiel_Vollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.None
-            Me.ControlBox = False
-            Me.MaximizeBox = False
-            Me.MinimizeBox = False
-        ElseIf Datenbank.Spiel_Fenstervollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.Fixed3D
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        ElseIf Datenbank.Spiel_Fenster = True Then
-            Me.WindowState = FormWindowState.Normal
-            Me.FormBorderStyle = FormBorderStyle.Sizable
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        End If
-
         Init()
 
     End Sub
 
     Private Sub Init()
+        Vollbildcheck()
         Debug_Modus()
         Spielauswahl_BG()
 
@@ -206,7 +179,38 @@
         PB_Spiel_070_Erstellen()
         PB_Spiel_071_Erstellen()
         PB_Spiel_072_Erstellen()
-        Text_01_Erstellen()
+
+
+    End Sub
+
+    Private Sub Vollbildcheck()
+        If Datenbank.Spiel_Vollbild = True Then
+            Me.WindowState = FormWindowState.Maximized
+            Me.FormBorderStyle = FormBorderStyle.None
+            Me.ControlBox = False
+            Me.MaximizeBox = False
+            Me.MinimizeBox = False
+        ElseIf Datenbank.Spiel_Fenstervollbild = True Then
+            Me.WindowState = FormWindowState.Maximized
+            Me.FormBorderStyle = FormBorderStyle.Fixed3D
+            Me.Width = Datenbank.Spielwelt_Breite
+            Me.Height = Datenbank.Spielwelt_Höhe
+            Me.ControlBox = True
+            Me.MaximizeBox = True
+            Me.MinimizeBox = True
+            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
+            Me.StartPosition = FormStartPosition.CenterScreen
+        ElseIf Datenbank.Spiel_Fenster = True Then
+            Me.WindowState = FormWindowState.Normal
+            Me.FormBorderStyle = FormBorderStyle.Sizable
+            Me.Width = Datenbank.Spielwelt_Breite
+            Me.Height = Datenbank.Spielwelt_Höhe
+            Me.ControlBox = True
+            Me.MaximizeBox = True
+            Me.MinimizeBox = True
+            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
+            Me.StartPosition = FormStartPosition.CenterScreen
+        End If
     End Sub
 
     Private Sub Debug_Modus()
@@ -218,21 +222,12 @@
         End If
     End Sub
 
-    Private Sub Text_01_Erstellen()
-        With Text_01
-            .Location = New Point(Datenbank.Spielauswahl_Breite_1_12 + ((Datenbank.Spielauswahl_Bild_Größe + Spielauswahl_PB_Abstand) * 12), Datenbank.Spielauswahl_Höhe_1_12)
-            .Text = "Event-Start"
-            .Font = New Font("Tahoma", 10, FontStyle.Bold Or FontStyle.Italic)
-        End With
-        Controls.Add(Text_01)
-        Text_01.Parent = Me
-    End Sub
 
 
     Private Sub Spielauswahl_BG()
 
         PB_Spiel_001.BackgroundImage = My.Resources.Heißer_Draht
-        PB_Spiel_002.BackgroundImage = My.Resources.Film_Quiz_O
+        PB_Spiel_002.BackgroundImage = My.Resources.Film_Quiz
         PB_Spiel_003.BackgroundImage = My.Resources.Spielplatzhalter
         PB_Spiel_004.BackgroundImage = My.Resources.Spielplatzhalter
         PB_Spiel_005.BackgroundImage = My.Resources.Spielplatzhalter

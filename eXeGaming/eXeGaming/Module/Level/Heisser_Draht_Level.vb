@@ -74,6 +74,80 @@
     Public level_071 As Boolean = False
     Public level_072 As Boolean = False
 
+    'Level abgeschlossen
+    Public level_done_001 As Boolean = False
+    Public level_done_002 As Boolean = False
+    Public level_done_003 As Boolean = False
+    Public level_done_004 As Boolean = False
+    Public level_done_005 As Boolean = False
+    Public level_done_006 As Boolean = False
+    Public level_done_007 As Boolean = False
+    Public level_done_008 As Boolean = False
+    Public level_done_009 As Boolean = False
+    Public level_done_010 As Boolean = False
+    Public level_done_011 As Boolean = False
+    Public level_done_012 As Boolean = False
+    Public level_done_013 As Boolean = False
+    Public level_done_014 As Boolean = False
+    Public level_done_015 As Boolean = False
+    Public level_done_016 As Boolean = False
+    Public level_done_017 As Boolean = False
+    Public level_done_018 As Boolean = False
+    Public level_done_019 As Boolean = False
+    Public level_done_020 As Boolean = False
+    Public level_done_021 As Boolean = False
+    Public level_done_022 As Boolean = False
+    Public level_done_023 As Boolean = False
+    Public level_done_024 As Boolean = False
+    Public level_done_025 As Boolean = False
+    Public level_done_026 As Boolean = False
+    Public level_done_027 As Boolean = False
+    Public level_done_028 As Boolean = False
+    Public level_done_029 As Boolean = False
+    Public level_done_030 As Boolean = False
+    Public level_done_031 As Boolean = False
+    Public level_done_032 As Boolean = False
+    Public level_done_033 As Boolean = False
+    Public level_done_034 As Boolean = False
+    Public level_done_035 As Boolean = False
+    Public level_done_036 As Boolean = False
+    Public level_done_037 As Boolean = False
+    Public level_done_038 As Boolean = False
+    Public level_done_039 As Boolean = False
+    Public level_done_040 As Boolean = False
+    Public level_done_041 As Boolean = False
+    Public level_done_042 As Boolean = False
+    Public level_done_043 As Boolean = False
+    Public level_done_044 As Boolean = False
+    Public level_done_045 As Boolean = False
+    Public level_done_046 As Boolean = False
+    Public level_done_047 As Boolean = False
+    Public level_done_048 As Boolean = False
+    Public level_done_049 As Boolean = False
+    Public level_done_050 As Boolean = False
+    Public level_done_051 As Boolean = False
+    Public level_done_052 As Boolean = False
+    Public level_done_053 As Boolean = False
+    Public level_done_054 As Boolean = False
+    Public level_done_055 As Boolean = False
+    Public level_done_056 As Boolean = False
+    Public level_done_057 As Boolean = False
+    Public level_done_058 As Boolean = False
+    Public level_done_059 As Boolean = False
+    Public level_done_060 As Boolean = False
+    Public level_done_061 As Boolean = False
+    Public level_done_062 As Boolean = False
+    Public level_done_063 As Boolean = False
+    Public level_done_064 As Boolean = False
+    Public level_done_065 As Boolean = False
+    Public level_done_066 As Boolean = False
+    Public level_done_067 As Boolean = False
+    Public level_done_068 As Boolean = False
+    Public level_done_069 As Boolean = False
+    Public level_done_070 As Boolean = False
+    Public level_done_071 As Boolean = False
+    Public level_done_072 As Boolean = False
+
     Public Sub Level_Reset()
         Heisser_Draht_Level.level_001 = True
         Heisser_Draht_Level.level_002 = False
@@ -148,6 +222,5 @@
         Heisser_Draht_Level.level_071 = False
         Heisser_Draht_Level.level_072 = False
     End Sub
-
 
 End Module

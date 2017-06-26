@@ -208,12 +208,6 @@
   <data name="Einstellungen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Einstellungen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Film_Quiz_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Film_Quiz_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Film_Quiz_O" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Film_Quiz_O.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="glass_of_wine_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glass_of_wine_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -778,9 +772,6 @@
   <data name="Level072G" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Level072G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Level_erfolg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Level-erfolg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Level_Start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Level-Start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -972,5 +963,224 @@
   </data>
   <data name="button_trader_op" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_trader_op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level001D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level001D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level002D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level002D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Film_Quiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Film_Quiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level003D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level003D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level004D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level004D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level005D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level005D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level006D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level006D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level007D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level007D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level008D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level008D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level009D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level009D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level010D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level010D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level011D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level011D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level012D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level012D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level013D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level013D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level014D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level014D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level015D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level015D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level016D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level016D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level017D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level017D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level018D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level018D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level019D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level019D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level020D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level020D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level021D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level021D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level022D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level022D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level023D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level023D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level024D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level024D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level025D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level025D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level026D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level026D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level027D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level027D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level028D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level028D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level029D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level029D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level030D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level030D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level031D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level031D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level032D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level032D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level033D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level033D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level034D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level034D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level035D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level035D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level036D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level036D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level037D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level037D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level038D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level038D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level039D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level039D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level040D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level040D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level041D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level041D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level042D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level042D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level043D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level043D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level044D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level044D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level045D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level045D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level046D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level046D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level047D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level047D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level048D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level048D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level049D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level049D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level050D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level050D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level051D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level051D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level052D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level052D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level053D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level053D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level054D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level054D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level055D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level055D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level056D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level056D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level057D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level057D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level058D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level058D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level059D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level059D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level060D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level060D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level061D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level061D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level062D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level062D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level063D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level063D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level064D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level064D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level065D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level065D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level066D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level066D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level067D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level067D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level068D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level068D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level069D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level069D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level070D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level070D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level071D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level071D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Level072D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Level072D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

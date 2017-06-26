@@ -30,6 +30,21 @@ Public Class Launcher
     Dim INI As New INIDatei.INIDatei 'Dekalriert INI
     Private WithEvents HTTPClient As WebClient 'HTTPClient
 
+    Dim MausLocation As Point
+
+
+    Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseDown
+        If e.Button = MouseButtons.Left Then
+            MausLocation = e.Location
+        End If
+    End Sub
+    Private Sub Form1_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseMove
+        If e.Button = MouseButtons.Left Then
+            Me.Location = e.Location - MausLocation + Me.Location
+        End If
+    End Sub
+
+
     Private Sub Launcher_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         init()
         Verzeichnis.Spielpfad_erstellen()
@@ -466,8 +481,6 @@ Public Class Launcher
         'PB_News.Parent = Me
     End Sub
 #End Region
-
-
 
     Private Sub News_Text_Erstellen()
         'With News_Text

@@ -69,13 +69,15 @@
     Public Level_Hintergrundfarbe As Color = Color.LightSkyBlue
     Public Level_Schriftfarbe As Color = Color.Black
     Public Level_Titel_Song As String = "Level_Titel_Song"
-    Public Level_Bild_Größe As Integer = 112
+    Public Level_Bild_Größe As Integer = 128
     Public Level_Breite_1_12 As Integer = (Datenbank.Level_Breite / 10) / 3
     Public Level_Höhe_1_12 As Integer = (Datenbank.Level_Höhe / 10) / 3
     Public Level_PB_Abstand As Integer = 25
+
+    'Heißer Draht
+    Public Balkenfarbe As Image = My.Resources.heisser_draht_textur
     Public Maus_Back_Breite As Integer = 1727
     Public Maus_Back_höhe As Integer = 166
-    Public Balkenfarbe As Image = My.Resources.heisser_draht_textur
 
 
 
@@ -120,5 +122,8 @@
         Spieler_Ep = 0
         Spieler_Level = 1
     End Sub
+
+
+
 
 End Module

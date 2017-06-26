@@ -62,7 +62,7 @@ Partial Class HD_Level1
         '
         'TSB_Versuche
         '
-        Me.TSB_Versuche.Image = CType(resources.GetObject("TSB_Versuche.Image"), System.Drawing.Image)
+        Me.TSB_Versuche.Image = Global.eXeGaming.My.Resources.Resources.counter
         Me.TSB_Versuche.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.TSB_Versuche.Name = "TSB_Versuche"
         Me.TSB_Versuche.Size = New System.Drawing.Size(99, 22)
