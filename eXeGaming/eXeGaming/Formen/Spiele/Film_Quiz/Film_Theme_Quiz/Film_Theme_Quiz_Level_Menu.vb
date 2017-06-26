@@ -1947,6 +1947,19 @@
 
     End Sub
 
+    Private Sub Film_Theme_Quiz_Level_Menu_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+
+        Dim Result As MsgBoxResult
+        Result = MsgBox("Soll das Spiel geschlossen werden?", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
+
+        If e.KeyCode = Keys.Escape = True Then
+            If Result = MsgBoxResult.Yes = True Then
+                Application.Exit()
+            Else
+            End If
+        End If
+    End Sub
+
 #End Region
 
 End Class

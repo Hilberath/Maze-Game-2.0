@@ -17,7 +17,7 @@
             .Text = titel
             .Width = Datenbank.Spielmenu_Breite
             .Height = Datenbank.Spielmenu_Höhe
-            .BackColor = Datenbank.Spielmenu_Hintergrundfarbe
+            .BackgroundImage = My.Resources.Hintergrund_standart
             .ForeColor = Datenbank.Spielmenu_Schriftfarbe
             .BackgroundImageLayout = ImageLayout.None
 
@@ -127,7 +127,18 @@
     Private Sub Film_Quiz_Spiel_003_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
-
 #End Region
+    Private Sub Film_Quiz_Auswahl_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+
+        Dim Result As MsgBoxResult
+        Result = MsgBox("Soll das Spiel geschlossen werden?", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
+
+        If e.KeyCode = Keys.Escape = True Then
+            If Result = MsgBoxResult.Yes = True Then
+                Application.Exit()
+            Else
+            End If
+        End If
+    End Sub
 
 End Class

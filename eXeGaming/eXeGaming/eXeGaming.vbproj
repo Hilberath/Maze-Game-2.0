@@ -164,6 +164,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formen\Einstellungen.resx">
+      <DependentUpon>Einstellungen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formen\Launcher.resx">
       <DependentUpon>Launcher.vb</DependentUpon>
     </EmbeddedResource>
@@ -301,19 +304,10 @@
     <None Include="Resources\counter.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Film_Quiz_Cover.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Film_Quiz_G.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Film_Quiz_O.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Film_Quiz_Theme.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Film_Quiz_Zitat.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\glass_of_wine_empty.png" />
@@ -341,9 +335,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\heart_half.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Heißer Draht.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\heisser_draht_textur.jpg" />
@@ -599,45 +590,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Einstellungen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Hintergrund_standart.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_beenden_mp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_beenden_op.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_einstellungen_mp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_einstellungen_op.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_erfolge_op.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_gamestart_mp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_gamestart_op.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_highscore_mp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_highscore_op.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_trader_mp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_trader_op.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\button_erfolge_mp.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Spielplatzhalter.png" />
@@ -1291,7 +1243,79 @@
     <None Include="Resources\Level072G.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Heißer Draht.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Film_Quiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Film_Quiz_Zitat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_highscore_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_menue_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_menue_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_trader_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_trader_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hintergrund_standart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_beenden_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_beenden_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_einstellungen_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_einstellungen_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_erfolge_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_erfolge_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_gamestart_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_gamestart_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_highscore_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level_Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level_Ziel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD_Level001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD_Level002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD_Level003.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

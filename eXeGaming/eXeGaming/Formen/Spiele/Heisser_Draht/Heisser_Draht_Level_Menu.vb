@@ -82,12 +82,16 @@
     Private Sub Level_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With Me
             '.Icon = Datenbank.Spiel_Icon
+            FormBorderStyle = FormBorderStyle.None
             .Text = titel
             .Width = Datenbank.Spielmenu_Breite
             .Height = Datenbank.Spielmenu_Höhe
             .BackgroundImage = My.Resources.Hintergrund_standart
             .ForeColor = Datenbank.Spielmenu_Schriftfarbe
             .BackgroundImageLayout = ImageLayout.None
+            .AutoSizeMode = AutoSizeMode.GrowAndShrink
+            .StartPosition = FormStartPosition.CenterScreen
+            .WindowState = FormWindowState.Maximized
 
         End With
         Init()
@@ -95,7 +99,6 @@
     End Sub
 
     Private Sub Init()
-        Vollbildcheck()
         Debug_Modus()
         LevelBG()
 
@@ -179,35 +182,6 @@
         PB_LvL_072_Erstellen()
     End Sub
 
-    Private Sub Vollbildcheck()
-        If Datenbank.Spiel_Vollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.None
-            Me.ControlBox = False
-            Me.MaximizeBox = False
-            Me.MinimizeBox = False
-        ElseIf Datenbank.Spiel_Fenstervollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.Fixed3D
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        ElseIf Datenbank.Spiel_Fenster = True Then
-            Me.WindowState = FormWindowState.Normal
-            Me.FormBorderStyle = FormBorderStyle.Sizable
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        End If
-    End Sub
 
     Private Sub Debug_Modus()
 
@@ -230,14 +204,22 @@
             End If
 
         If Heisser_Draht_Level.level_002 = True Then
-            PB_LvL_002.BackgroundImage = My.Resources.Level002F
-        Else
+            If Heisser_Draht_Level.level_done_002 = True Then
+                PB_LvL_002.BackgroundImage = My.Resources.Level002D
+            ElseIf Heisser_Draht_Level.level_done_002 = False Then
+                PB_LvL_002.BackgroundImage = My.Resources.Level002F
+            End If
+        ElseIf Heisser_Draht_Level.level_002 = False Then
             PB_LvL_002.BackgroundImage = My.Resources.Level002G
         End If
 
         If Heisser_Draht_Level.level_003 = True Then
-            PB_LvL_003.BackgroundImage = My.Resources.Level003F
-        Else
+            If Heisser_Draht_Level.level_done_003 = True Then
+                PB_LvL_003.BackgroundImage = My.Resources.Level003D
+            ElseIf Heisser_Draht_Level.level_done_003 = False Then
+                PB_LvL_003.BackgroundImage = My.Resources.Level003F
+            End If
+        ElseIf Heisser_Draht_Level.level_003 = False Then
             PB_LvL_003.BackgroundImage = My.Resources.Level003G
         End If
 
@@ -1953,6 +1935,19 @@
 
     Private Sub PB_LvL_072_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub Heisser_Draht_Level_Menu_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+
+        Dim Result As MsgBoxResult
+        Result = MsgBox("Soll das Spiel geschlossen werden?", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
+
+        If e.KeyCode = Keys.Escape = True Then
+            If Result = MsgBoxResult.Yes = True Then
+                Application.Exit()
+            Else
+            End If
+        End If
     End Sub
 
 #End Region

@@ -16,13 +16,22 @@
 
     Private Sub Spiel_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With Me
-            '.Icon = Datenbank.Spiel_Icon
-            .Text = titel
+            .FormBorderStyle = FormBorderStyle.None
             .Width = Datenbank.Spielmenu_Breite
             .Height = Datenbank.Spielmenu_Höhe
-            .BackgroundImage = My.Resources.Hintergrund_standart
+            '.BackColor = Datenbank.Launcher_Hintergrundfarbe
             .ForeColor = Datenbank.Spielmenu_Schriftfarbe
-            .BackgroundImageLayout = ImageLayout.None
+            .Text = titel
+            .ControlBox = False
+            .MaximizeBox = False
+            .MinimizeBox = False
+            .BackgroundImage = My.Resources.Hintergrund_standart
+            .AutoSizeMode = AutoSizeMode.GrowAndShrink
+            .StartPosition = FormStartPosition.CenterScreen
+            .WindowState = FormWindowState.Maximized
+            '.Icon = My.Resources
+
+
 
         End With
         Init()
@@ -33,43 +42,12 @@
         Debug_Modus()
         'Update_Statusleiste()
         'AntiAlias()
-        Vollbildcheck()
         PB_Spiel_Starten_Erstellen()
         PB_Laden_Erstellen()
         PB_Highscore_Erstellen()
         PB_Erfolge_Erstellen()
         PB_Einstellungen_Erstellen()
         PB_Schliessen_Erstellen()
-    End Sub
-
-    Private Sub Vollbildcheck()
-        If Datenbank.Spiel_Vollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.None
-            Me.ControlBox = False
-            Me.MaximizeBox = False
-            Me.MinimizeBox = False
-        ElseIf Datenbank.Spiel_Fenstervollbild = True Then
-            Me.WindowState = FormWindowState.Maximized
-            Me.FormBorderStyle = FormBorderStyle.Fixed3D
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        ElseIf Datenbank.Spiel_Fenster = True Then
-            Me.WindowState = FormWindowState.Normal
-            Me.FormBorderStyle = FormBorderStyle.Sizable
-            Me.Width = Datenbank.Spielwelt_Breite
-            Me.Height = Datenbank.Spielwelt_Höhe
-            Me.ControlBox = True
-            Me.MaximizeBox = True
-            Me.MinimizeBox = True
-            Me.AutoSizeMode = AutoSizeMode.GrowAndShrink
-            Me.StartPosition = FormStartPosition.CenterScreen
-        End If
     End Sub
 
     'Private Sub AntiAlias()
@@ -111,7 +89,6 @@
 
     Private Sub PB_Spiel_Starten_Click(sender As Object, e As EventArgs)
         Spiel_Auswahl.Show()
-        Me.Close()
     End Sub
     Private Sub PB_Spiel_Starten_MouseEnter(sender As Object, e As EventArgs)
         PB_Spiel_Starten.Image = My.Resources.button_gamestart_mp
@@ -227,7 +204,7 @@
     End Sub
 
     Private Sub PB_Einstellungen_Click(sender As Object, e As EventArgs)
-        Spiel_Auswahl.Show()
+        Einstellungen.Show()
     End Sub
     Private Sub PB_Einstellungen_MouseEnter(sender As Object, e As EventArgs)
         PB_Einstellungen.Image = My.Resources.button_einstellungen_mp
@@ -267,5 +244,19 @@
         PB_Schliessen.Image = My.Resources.button_beenden_op
     End Sub
 #End Region
+
+    Private Sub Spiel_Menu_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+
+        Dim Result As MsgBoxResult
+        Result = MsgBox("Soll das Spiel geschlossen werden?", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
+
+        If e.KeyCode = Keys.Escape = True Then
+                If Result = MsgBoxResult.Yes = True Then
+                    Application.Exit()
+                Else
+                End If
+            End If
+    End Sub
+
 
 End Class

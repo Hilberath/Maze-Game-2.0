@@ -180,6 +180,7 @@
     End Sub
 
     Private Sub R07_MouseEnter(sender As Object, e As EventArgs)
+        Heisser_Draht_Level.level_done_002 = True
         Heisser_Draht_Level.level_003 = True
         Heisser_Draht_Level_Menu.Show()
         MsgBox("Glückwunsch, du hast es geschafft!")
@@ -234,4 +235,16 @@
         SetCursorPos(x, y)
     End Sub
 
+    Private Sub HD_Level2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+
+        Dim Result As MsgBoxResult
+        Result = MsgBox("Soll das Spiel geschlossen werden?", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
+
+        If e.KeyCode = Keys.Escape = True Then
+            If Result = MsgBoxResult.Yes = True Then
+                Application.Exit()
+            Else
+            End If
+        End If
+    End Sub
 End Class

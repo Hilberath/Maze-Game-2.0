@@ -76,8 +76,8 @@
 
     'Heißer Draht
     Public Balkenfarbe As Image = My.Resources.heisser_draht_textur
-    Public Maus_Back_Breite As Integer = 1727
-    Public Maus_Back_höhe As Integer = 166
+    Public Maus_Back_Breite As Integer = 1706
+    Public Maus_Back_höhe As Integer = 206
 
 
 

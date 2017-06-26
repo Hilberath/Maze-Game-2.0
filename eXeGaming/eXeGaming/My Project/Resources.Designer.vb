@@ -333,6 +333,26 @@ Namespace My.Resources
         '''<summary>
         '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property button_menue_mp() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("button_menue_mp", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property button_menue_op() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("button_menue_op", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property button_minim_mp() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("button_minim_mp", resourceCulture)
@@ -566,6 +586,36 @@ Namespace My.Resources
         Friend ReadOnly Property hd_720() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("hd_720", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property HD_Level001() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("HD_Level001", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property HD_Level002() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("HD_Level002", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property HD_Level003() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("HD_Level003", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
