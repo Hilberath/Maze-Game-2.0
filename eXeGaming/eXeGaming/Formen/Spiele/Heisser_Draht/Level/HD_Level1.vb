@@ -65,11 +65,11 @@
     Private Sub HD_Level1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
 
         Dim Result As MsgBoxResult
-        Result = MsgBox("Soll das Spiel geschlossen werden?", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
+        Result = MsgBox("Zurück zum Level Menü", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
 
         If e.KeyCode = Keys.Escape = True Then
             If Result = MsgBoxResult.Yes = True Then
-                Application.Exit()
+                Heisser_Draht_Level_Menu.Show()
             Else
             End If
         End If
@@ -142,10 +142,55 @@
     Private Sub PB_Ziel_MouseEnter(sender As Object, e As EventArgs) Handles PB_Ziel.MouseEnter
         Heisser_Draht_Level.level_done_001 = True
         Heisser_Draht_Level.level_002 = True
-        Heisser_Draht_Level_Menu.Show()
-        MsgBox("Glückwunsch, du hast es geschafft!")
+        HD_Level2.Show()
         Me.Close()
     End Sub
 
+    Private Sub PB_Wall4_Click(sender As Object, e As EventArgs) Handles PB_Wall4.Click
 
+    End Sub
+
+    Private Sub Label_Versuche_Click(sender As Object, e As EventArgs) Handles Label_Versuche.Click
+
+    End Sub
+
+    Private Sub Label_Zeit_Click(sender As Object, e As EventArgs) Handles Label_Zeit.Click
+
+    End Sub
+
+    Private Sub PB_Start_Click(sender As Object, e As EventArgs) Handles PB_Start.Click
+
+    End Sub
+
+    Private Sub PB_Ziel_Click(sender As Object, e As EventArgs) Handles PB_Ziel.Click
+
+    End Sub
+
+    Private Sub PB_Wall1_Click(sender As Object, e As EventArgs) Handles PB_Wall1.Click
+
+    End Sub
+
+    Private Sub PB_Wall2_Click(sender As Object, e As EventArgs) Handles PB_Wall2.Click
+
+    End Sub
+
+    Private Sub PB_Wall3_Click(sender As Object, e As EventArgs) Handles PB_Wall3.Click
+
+    End Sub
+
+    Private Sub PB_Wall5_Click(sender As Object, e As EventArgs) Handles PB_Wall5.Click
+
+    End Sub
+
+    Private Sub PB_Wall6_Click(sender As Object, e As EventArgs) Handles PB_Wall6.Click
+
+    End Sub
+
+    Private Sub PB_Wall7_Click(sender As Object, e As EventArgs) Handles PB_Wall7.Click
+
+    End Sub
+
+    Private Sub PB_Wall8_Click(sender As Object, e As EventArgs) Handles PB_Wall8.Click
+
+    End Sub
 End Class

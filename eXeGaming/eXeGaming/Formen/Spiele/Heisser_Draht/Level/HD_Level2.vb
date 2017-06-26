@@ -1,19 +1,12 @@
 ﻿Public Class HD_Level2
 
-    Dim R01 As New PictureBox
-    Dim R02 As New PictureBox
-    Dim R03 As New PictureBox
-    Dim R04 As New PictureBox
-    Dim R05 As New PictureBox
-    Dim R06 As New PictureBox
-    Dim R07 As New PictureBox
-    Dim R08 As New PictureBox
-    Dim R09 As New PictureBox
-    Dim R10 As New PictureBox
+    Dim ZeitText As New Label
+    Dim Zeit As Integer
+    Dim Versuch As Integer
 
-    Private Sub Level2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub HD_Level2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         With Me
-            .FormBorderStyle = FormBorderStyle.Fixed3D
+            .FormBorderStyle = FormBorderStyle.None
             .Width = Datenbank.Level_Breite
             .Height = Datenbank.Level_Höhe
             .BackColor = Datenbank.Level_Hintergrundfarbe
@@ -22,7 +15,8 @@
             .StartPosition = FormStartPosition.CenterScreen
             .WindowState = FormWindowState.Maximized
             '.Icon = My.Resources
-
+            Zeit = 0
+            Versuch = 0
             init()
 
         End With
@@ -40,211 +34,155 @@
     Private Declare Function SetCursorPos Lib "user32" (ByVal X As Integer, ByVal Y As Integer) As Integer
 
     Private Sub init()
-        R01_Erstellen()
-        R02_Erstellen()
-        R03_Erstellen()
-        R04_Erstellen()
-        R05_Erstellen()
-        R06_Erstellen()
-        R07_Erstellen()
-        R08_Erstellen()
-        R09_Erstellen()
-        R10_Erstellen()
+
+        ZeitText_Erstellen()
+        Timer1.Start()
+        versuche()
 
     End Sub
 
-    Private Sub R01_Erstellen()
-        With R01
-            .Location = New Point(12, 12)
-            .Size = New Size(30, 1017)
-            .BackgroundImage = Datenbank.Balkenfarbe
-            .BackgroundImageLayout = ImageLayout.Tile
-        End With
-        AddHandler R01.MouseEnter, AddressOf R01_MouseEnter
-        Controls.Add(R01)
-        R01.Parent = Me
+    Private Sub ZeitText_Erstellen()
+        Label_Zeit.Text = Zeit
+    End Sub
+    Private Sub countdown()
+
+        Zeit += 1
+        Timer1.Start()
     End Sub
 
-    Private Sub R01_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
+    Private Sub versuche()
+        Label_Versuche.Text = Versuch
     End Sub
 
-    Private Sub R02_Erstellen()
-        With R02
-            .Location = New Point(42, 999)
-            .Size = New Size(1850, 30)
-            .BackgroundImage = Datenbank.Balkenfarbe
-            .BackgroundImageLayout = ImageLayout.Tile
-        End With
-        AddHandler R02.MouseEnter, AddressOf R02_MouseEnter
-        Controls.Add(R02)
-        R02.Parent = Me
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs)
+        countdown()
+        ZeitText_Erstellen()
+        versuche()
     End Sub
 
-    Private Sub R02_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
-    End Sub
-
-    Private Sub R03_Erstellen()
-        With R03
-            .Location = New Point(1862, 283)
-            .Size = New Size(30, 717)
-            .BackgroundImage = Datenbank.Balkenfarbe
-            .BackgroundImageLayout = ImageLayout.Tile
-        End With
-        AddHandler R03.MouseEnter, AddressOf R03_MouseEnter
-        Controls.Add(R03)
-        R03.Parent = Me
-    End Sub
-
-    Private Sub R03_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
-        SetCursorPos(x, y)
-    End Sub
-
-    Private Sub R04_Erstellen()
-        With R04
-            .Location = New Point(362, 283)
-            .Size = New Size(1500, 400)
-            .BackgroundImage = Datenbank.Balkenfarbe
-            .BackgroundImageLayout = ImageLayout.Tile
-        End With
-        AddHandler R04.MouseEnter, AddressOf R04_MouseEnter
-        Controls.Add(R04)
-        R04.Parent = Me
-    End Sub
-
-    Private Sub R04_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
-    End Sub
-
-    Private Sub R05_Erstellen()
-        With R05
-            .Location = New Point(362, 130)
-            .Size = New Size(400, 30)
-            .BackgroundImage = Datenbank.Balkenfarbe
-        End With
-        AddHandler R05.MouseEnter, AddressOf R05_MouseEnter
-        Controls.Add(R05)
-        R05.Parent = Me
-    End Sub
-
-    Private Sub R05_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
-    End Sub
-
-    Private Sub R06_Erstellen()
-        With R06
-            .Location = New Point(42, 12)
-            .Size = New Size(1500, 30)
-            .BackgroundImage = Datenbank.Balkenfarbe
-        End With
-        AddHandler R06.MouseEnter, AddressOf R06_MouseEnter
-        Controls.Add(R06)
-        R06.Parent = Me
-    End Sub
-
-    Private Sub R06_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
-    End Sub
-
-    Private Sub R07_Erstellen()
-        With R07
-            .Location = New Point(1663, 791)
-            .Size = New Size(128, 128)
-            .BackgroundImage = My.Resources.Level_Ziel
-            .BackgroundImageLayout = ImageLayout.Stretch
-            .BackColor = Nothing
-        End With
-        AddHandler R07.MouseEnter, AddressOf R07_MouseEnter
-        Controls.Add(R07)
-        R07.Parent = Me
-    End Sub
-
-    Private Sub R07_MouseEnter(sender As Object, e As EventArgs)
-        Heisser_Draht_Level.level_done_002 = True
-        Heisser_Draht_Level.level_003 = True
-        Heisser_Draht_Level_Menu.Show()
-        MsgBox("Glückwunsch, du hast es geschafft!")
-        Me.Close()
-    End Sub
-
-    Private Sub R08_Erstellen()
-        With R08
-            .Location = New Point(1663, 102)
-            .Size = New Size(128, 128)
-            .BackgroundImage = My.Resources.Level_Start
-            .BackgroundImageLayout = ImageLayout.Stretch
-            .BackColor = Nothing
-        End With
-        Controls.Add(R08)
-        R08.Parent = Me
-    End Sub
-
-    Private Sub R09_Erstellen()
-        With R09
-            .Location = New Point(762, 130)
-            .Size = New Size(30, 154)
-            .BackgroundImage = Datenbank.Balkenfarbe
-        End With
-        AddHandler R09.MouseEnter, AddressOf R09_MouseEnter
-        Controls.Add(R09)
-        R09.Parent = Me
-    End Sub
-
-    Private Sub R09_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
-    End Sub
-
-    Private Sub R10_Erstellen()
-        With R10
-            .Location = New Point(880, 42)
-            .Size = New Size(30, 215)
-            .BackgroundImage = Datenbank.Balkenfarbe
-        End With
-        AddHandler R10.MouseEnter, AddressOf R10_MouseEnter
-        Controls.Add(R10)
-        R10.Parent = Me
-    End Sub
-
-    Private Sub R10_MouseEnter(sender As Object, e As EventArgs)
-        MsgBox("Game Over")
-        Dim x As Integer = Datenbank.Maus_Back_Breite
-        Dim y As Integer = Datenbank.Maus_Back_höhe
-        SetCursorPos(x, y)
-    End Sub
-
-    Private Sub HD_Level2_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+    Private Sub HD_Level1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
 
         Dim Result As MsgBoxResult
-        Result = MsgBox("Soll das Spiel geschlossen werden?", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
+        Result = MsgBox("Zurück zum Level Menü", MsgBoxStyle.Information Or MsgBoxStyle.YesNo)
 
         If e.KeyCode = Keys.Escape = True Then
             If Result = MsgBoxResult.Yes = True Then
-                Application.Exit()
+                Heisser_Draht_Level_Menu.Show()
             Else
             End If
         End If
+    End Sub
+
+    Private Sub PB_Wall1_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall1.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall3_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall3.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall2_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall2.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall7_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall7.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall8_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall8.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall4_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall4.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall6_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall6.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall5_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall5.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Ziel_MouseEnter(sender As Object, e As EventArgs) Handles PB_Ziel.MouseEnter
+        Heisser_Draht_Level.level_done_002 = True
+        Heisser_Draht_Level.level_003 = True
+        Heisser_Draht_Level_Menu.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub PB_Wall9_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall9.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall10_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall10.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall11_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall11.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_wall12_MouseEnter(sender As Object, e As EventArgs) Handles PB_wall12.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
+    End Sub
+
+    Private Sub PB_Wall13_MouseEnter(sender As Object, e As EventArgs) Handles PB_Wall13.MouseEnter
+        Versuch += 1
+        MsgBox("Game Over")
+        Dim x As Integer = Datenbank.Maus_Back_Breite
+        Dim y As Integer = Datenbank.Maus_Back_höhe
+        SetCursorPos(x, y)
     End Sub
 End Class
