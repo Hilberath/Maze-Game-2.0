@@ -937,4 +937,40 @@
   <data name="Star_Wars_Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Star_Wars_Theme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="button_beenden_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_beenden_mp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_beenden_op" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_beenden_op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_einstellungen_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_einstellungen_mp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_einstellungen_op" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_einstellungen_op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_erfolge_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_erfolge_mp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_erfolge_op" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_erfolge_op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_gamestart_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_gamestart_mp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_gamestart_op" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_gamestart_op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_highscore_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_highscore_mp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_highscore_op" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_highscore_op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_trader_mp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_trader_mp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_trader_op" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_trader_op.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

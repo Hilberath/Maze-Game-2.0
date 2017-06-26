@@ -40,7 +40,9 @@
     Public Spielmenu_Hintergrundfarbe As Color = Color.Orange
     Public Spielmenu_Schriftfarbe As Color = Color.Black
     Public Spielmenu_Titel_Song As String = "Spiele_Titel_Song"
-    Public Spielmenu_Button = New Size(250, 50)
+    Public Spielmenu_Button = New Size(480, 80)
+    Public Spielmenu_Buttonabstand As Integer = 5
+    Public Spielmenu_Buttonhoehe As Integer = 80
 
     'Spiel Auswahl
     Public Spielauswahl_Breite As Integer = 1920

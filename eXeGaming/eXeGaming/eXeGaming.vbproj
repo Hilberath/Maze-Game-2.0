@@ -1037,5 +1037,41 @@
   <ItemGroup>
     <None Include="Resources\Hintergrund_standart.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_beenden_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_beenden_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_einstellungen_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_einstellungen_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_erfolge_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_erfolge_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_gamestart_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_gamestart_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_highscore_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_highscore_op.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_trader_mp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_trader_op.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
